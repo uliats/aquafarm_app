@@ -1,0 +1,177 @@
+/* Основные стили окна */
+ManagementWindow {
+    background-color: #f9f5ff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Стили для вкладок */
+QTabWidget::pane {
+    border: 1px solid #e1d5f7;
+    border-radius: 8px;
+    background: #f3edfc;
+    margin-top: 5px;
+}
+
+QTabBar::tab {
+    background: #e1d5f7;
+    color: #5e35b1;
+    padding: 8px 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 2px;
+    font-weight: 500;
+}
+
+QTabBar::tab:selected {
+    background: #d1c4e9;
+    color: #4527a0;
+    border-bottom: 3px solid #7c4dff;
+}
+
+QTabBar::tab:hover {
+    background: #d1c4e9;
+}
+
+/* Стили для таблиц */
+QTableWidget {
+    background-color: white;
+    border: 1px solid #d1c4e9;
+    border-radius: 8px;
+    gridline-color: #ede7f6;
+    font-size: 13px;
+    selection-background-color: #ede7f6;
+    selection-color: #5e35b1;
+    alternate-background-color: #f5f2fd;
+}
+
+QHeaderView::section {
+    background-color: #d1c4e9;
+    color: #5e35b1;
+    padding: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* Кнопки в фиолетовой гамме */
+QPushButton {
+    background-color: #7c4dff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    min-width: 100px;
+}
+
+QPushButton:hover {
+    background-color: #651fff;
+}
+
+QPushButton:pressed {
+    background-color: #6200ea;
+}
+
+QPushButton[icon="icons/add.png"] {
+    background-color: #6a1b9a;
+}
+
+QPushButton[icon="icons/delete.png"] {
+    background-color: #ad1457;
+}
+
+QPushButton[icon="icons/save.png"] {
+    background-color: #4527a0;
+}
+
+QPushButton[icon="icons/refresh.png"] {
+    background-color: #5e35b1;
+}
+
+/* Стили для меню */
+QMenuBar {
+    background-color: #ede7f6;
+    color: #5e35b1;
+    padding: 5px;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+QMenuBar::item:selected {
+    background: #d1c4e9;
+}
+
+QMenu {
+    background-color: white;
+    border: 1px solid #d1c4e9;
+    padding: 5px;
+}
+
+QMenu::item {
+    padding: 5px 25px 5px 20px;
+    color: #5e35b1;
+}
+
+QMenu::item:selected {
+    background-color: #ede7f6;
+    color: #4527a0;
+}
+
+/* Эффекты при наведении */
+QTableWidget::item:hover {
+    background-color: #ede7f6;
+}
+
+/* Стиль для выбранных строк */
+QTableWidget::item:selected {
+    background-color: #d1c4e9;
+    color: #4527a0;
+}
+
+/* Тени в фиолетовой гамме */
+QTabWidget::pane, QTableWidget, QMenu {
+    box-shadow: 0 2px 8px rgba(123, 31, 162, 0.1);
+}
+
+/* Спинбоксы и другие элементы */
+QSpinBox, QDoubleSpinBox, QLineEdit, QComboBox {
+    border: 1px solid #d1c4e9;
+    border-radius: 4px;
+    padding: 3px;
+    background: white;
+    selection-background-color: #d1c4e9;
+    selection-color: white;
+}
+
+QSpinBox:hover, QDoubleSpinBox:hover, QLineEdit:hover, QComboBox:hover {
+    border: 1px solid #b39ddb;
+}
+
+QSpinBox:focus, QDoubleSpinBox:focus, QLineEdit:focus, QComboBox:focus {
+    border: 1px solid #7c4dff;
+}
+
+/* Слайдеры */
+QSlider::groove:horizontal {
+    height: 6px;
+    background: #d1c4e9;
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    width: 16px;
+    height: 16px;
+    margin: -5px 0;
+    background: #7c4dff;
+    border-radius: 8px;
+}
+
+QSlider::sub-page:horizontal {
+    background: #b39ddb;
+    border-radius: 3px;
+}

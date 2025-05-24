@@ -1,0 +1,85 @@
+/* Основные стили */
+QWidget {
+    background-color: #f0f9fb; /* Изменен на основной фон */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #006064; /* Бирюзовый текст */
+}
+
+/* Окно авторизации */
+#titleLabel {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00838f; /* Темно-бирюзовый */
+    margin-bottom: 20px;
+}
+
+/* Метки */
+#loginLabel, #passwordLabel {
+    font-size: 14px;
+    color: #006064; /* Основной бирюзовый */
+    margin-bottom: 5px;
+}
+
+/* Поля ввода */
+#loginInput, #passwordInput {
+    background-color: white;
+    border: 1px solid #80deea; /* Светло-бирюзовая граница */
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    min-width: 250px;
+    color: #006064; /* Бирюзовый текст */
+}
+
+#loginInput:focus, #passwordInput:focus {
+    border: 1px solid #00bcd4; /* Ярко-бирюзовый при фокусе */
+    outline: none;
+}
+
+/* Кнопка входа */
+#loginButton {
+    background-color: #26c6da; /* Основной бирюзовый цвет кнопки */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    min-width: 120px;
+}
+
+#loginButton:hover {
+    background-color: #00bcd4; /* Ярче при наведении */
+}
+
+#loginButton:pressed {
+    background-color: #00acc1; /* Темнее при нажатии */
+}
+
+/* Сообщения об ошибках */
+QMessageBox {
+    background-color: white;
+    font-size: 14px;
+    border: 1px solid #80deea;
+    border-radius: 8px;
+}
+
+QMessageBox QLabel {
+    color: #006064;
+}
+
+QMessageBox QPushButton {
+    background-color: #26c6da;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #00bcd4;
+}
+
+/* Добавим легкую тень как в основном интерфейсе */
+QWidget#authWidget {
+    box-shadow: 0 2px 8px rgba(0, 188, 212, 0.1);
+}
